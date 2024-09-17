@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <title>Calculadora de Peso de Peças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora de Peças</h1>
+
+    <section>
+        <h2>Selecione a Embalagem</h2>
+        <select id="embalagem">
+            <option value="0">Sem Embalagem</option>
+            <option value="0.10">Embalagem de Material (0.10 kg)</option>
+            <option value="0.05">Embalagem de Plástico (0.05 kg)</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>Selecione a Peça</h2>
+        <select id="peca">
+            <option value="0.05">Tasto Grande (0.05 kg)</option>
+            <option value="0.02">Tasto Pequeno (0.02 kg)</option>
+        </select>
+    </section>
+
+    <section>
+        <h2>Insira o peso total (em Kg)</h2>
+        <input type="number" id="pesoTotal" placeholder="Insira o peso total" step="0.01">
+    </section>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <section>
+        
+        <p id="resultado">O resultado será exibido aqui</p>
+    </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
